@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html
+{
+    width: 400px; /* max: 1000px */
+    height: 750px; /* max: 750px */
+}
+body{
+    @apply h-full w-full;
+
+}
