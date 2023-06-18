@@ -8,7 +8,7 @@ function SearchBar({ onSearch,
     className='flex items-center justify-between w-full px-4 py-2 '
     >
         <input
-            className='w-full px-4 py-2 text-lg text-gray-700 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none '
+            className='w-full px-2 py-1  text-gray-700 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none '
             type="text"
             placeholder="Search"
             value={searchQuery}

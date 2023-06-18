@@ -22,12 +22,12 @@ function Template({ author, language, name, published, src }) {
     "
     >
       <div className="flex flex-col">
-        <h2 className="font-semibold text-lg">{name} </h2>
-        <div className="text-xs text-gray-500">
-          <span className=" text-gray-500 italic mx-2">{author} ({published})</span>
+        <h2 className="font-semibold text-sm">{name} </h2>
+        <div className="text-xs text-gray-500 my-1 flex gap-2">
+          <span className=" text-gray-500 italic">{author} ({published})</span>
           {/* Lanugeage badge */}
           <span
-            className={`px-2 py-1 text-xs font-semibold ${BadgeColors[language]} text-white rounded-full `}
+            className={`px-2 py-1 text-xs ${BadgeColors[language]} text-white rounded-full `}
           >
             {language}
             
@@ -47,7 +47,7 @@ function Template({ author, language, name, published, src }) {
         <Tooltip id="cpt" />
           <svg
             fill="#000000"
-            height="24"
+            height="16"
             viewBox="0 0 1920 1920"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -67,7 +67,7 @@ function Template({ author, language, name, published, src }) {
         className="flex items-center justify-center  ml-2 ">
           <Tooltip id="vwt" />
           <svg
-          height={24}
+          height={16}
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
