@@ -74,3 +74,15 @@ export const BadgeColors = {
   JavaScript: "bg-yellow-500",
   C: "bg-blue-500",
 };
+
+
+export const Lanugeages = [
+    "C",
+    "Cpp",
+    "Python",
+    "Java",
+    "JavaScript",
+    ].sort((a, b) => {
+    if (a < b) return -1;  
+    return 1;
+});

@@ -1,12 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html
+main
 {
     width: 400px; /* max: 1000px */
-    height: 750px; /* max: 750px */
+    height: 600px; /* max: 750px */
+    overflow: hidden;
 }
-body{
-    @apply h-full w-full;
 
+.show-res-cont{
+    overflow-y: hidden;
+    height: 72%;
+
+}
+.show-res{
+    overflow-y: auto;
+    height: 100%;
 }
