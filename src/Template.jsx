@@ -91,7 +91,13 @@ function Template({ author, language, name, published, src,local, onDelete }) {
         {/* view icon */}
         <button
           onClick={() => {
-            window.open(src);
+            if(!local) window.open(src);
+            else {
+              // create temp file with the content src
+              const blob = new Blob([src], { type: "text/plain" });
+              const url = URL.createObjectURL(blob);
+              window.open(url);
+            }
           }}
           data-tooltip-id="vwt"
           data-tooltip-content="View"

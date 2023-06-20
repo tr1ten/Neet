@@ -28,6 +28,11 @@ function AddTemplate() {
   return (
     <div>
         <NHeader goBackIcon></NHeader>
+        <h2
+        className='w-full px-4 py-2 text-2xl font-bold text-center text-gray-700'
+        >
+            New Local Template
+        </h2>
         <form
         className='flex flex-col items-center justify-center w-full px-4 py-2'
         onSubmit={(e) => {
@@ -65,7 +70,10 @@ function AddTemplate() {
             </select>
             <textarea
             className='w-full px-4 py-2 mb-2 border border-gray-200 rounded-md'
+            rows={10}
+
             type="text"
+
             placeholder="Code"
             value={template.src}
             onChange={(e) => setTemplate({ ...template, src: e.target.value })}
