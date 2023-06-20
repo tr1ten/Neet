@@ -1,20 +1,22 @@
 import React from "react";
-import { Tooltip } from 'react-tooltip';
-import {BadgeColors} from '../public/templates/index.js'
+import { Tooltip } from "react-tooltip";
+import { BadgeColors } from "../public/templates/index.js";
 // Card
 // Name, Author, Language, Published
 
-function Template({ author, language, name, published, src }) {
+function Template({ author, language, name, published, src,local, onDelete }) {
   const [copyStatus, setCopyStatus] = React.useState(false);
   const onCopy = () => {
-    fetch(src).then((res) => res.text()).then((text) => {
-      navigator.clipboard.writeText(text);
-    });
+    fetch(src)
+      .then((res) => res.text())
+      .then((text) => {
+        navigator.clipboard.writeText(text);
+      });
     setCopyStatus(true);
     setTimeout(() => {
       setCopyStatus(false);
     }, 1000);
-  }
+  };
   return (
     <div
       className="
@@ -24,27 +26,56 @@ function Template({ author, language, name, published, src }) {
       <div className="flex flex-col">
         <h2 className="font-semibold text-sm">{name} </h2>
         <div className="text-xs text-gray-500 my-1 flex gap-2">
-          <span className=" text-gray-500 italic">{author} ({published})</span>
+          <span className=" text-gray-500 italic">
+            {author} ({published})
+          </span>
           {/* Lanugeage badge */}
           <span
             className={`px-2 py-1 text-xs ${BadgeColors[language]} text-white rounded-full `}
           >
             {language}
-            
           </span>
         </div>
       </div>
       {/* Copy and view icon button */}
-      <div
-      className="flex flex-row gap-2"
-      >
+      <div className="flex flex-row gap-2">
+        {/* Delete icon */}
+       {
+          local && (
+            <button
+          onClick={()=> onDelete(name)}
+          data-tooltip-id="del"
+          data-tooltip-content="Delete"
+          className="flex items-center justify-center  ml-2 text-gray-500 "
+        >
+          <Tooltip id="del" />
+          <svg
+            width="24px"
+            viewBox="0 0 1024 1024"
+            class="icon"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M905.92 237.76a32 32 0 0 0-52.48 36.48A416 416 0 1 1 96 512a418.56 418.56 0 0 1 297.28-398.72 32 32 0 1 0-18.24-61.44A480 480 0 1 0 992 512a477.12 477.12 0 0 0-86.08-274.24z"
+              fill="red"
+            />
+            <path
+              d="M630.72 113.28A413.76 413.76 0 0 1 768 185.28a32 32 0 0 0 39.68-50.24 476.8 476.8 0 0 0-160-83.2 32 32 0 0 0-18.24 61.44zM489.28 86.72a36.8 36.8 0 0 0 10.56 6.72 30.08 30.08 0 0 0 24.32 0 37.12 37.12 0 0 0 10.56-6.72A32 32 0 0 0 544 64a33.6 33.6 0 0 0-9.28-22.72A32 32 0 0 0 505.6 32a20.8 20.8 0 0 0-5.76 1.92 23.68 23.68 0 0 0-5.76 2.88l-4.8 3.84a32 32 0 0 0-6.72 10.56A32 32 0 0 0 480 64a32 32 0 0 0 2.56 12.16 37.12 37.12 0 0 0 6.72 10.56zM726.72 297.28a32 32 0 0 0-45.12 0l-169.6 169.6-169.28-169.6A32 32 0 0 0 297.6 342.4l169.28 169.6-169.6 169.28a32 32 0 1 0 45.12 45.12l169.6-169.28 169.28 169.28a32 32 0 0 0 45.12-45.12L557.12 512l169.28-169.28a32 32 0 0 0 0.32-45.44z"
+              fill="red"
+            />
+          </svg>
+        </button>
+          )
+       }
         {/* copy paste icon */}
-        <button 
-        onClick={onCopy}
-        data-tooltip-id="cpt"
-        data-tooltip-content={copyStatus ? "Copied" : "Copy"}
-        className="flex items-center justify-center  ml-2 text-gray-500 ">
-        <Tooltip id="cpt" />
+        <button
+          onClick={onCopy}
+          data-tooltip-id="cpt"
+          data-tooltip-content={copyStatus ? "Copied" : "Copy"}
+          className="flex items-center justify-center  ml-2 text-gray-500 "
+        >
+          <Tooltip id="cpt" />
           <svg
             fill="#000000"
             height="16"
@@ -58,16 +89,17 @@ function Template({ author, language, name, published, src }) {
           </svg>
         </button>
         {/* view icon */}
-        <button 
-        onClick={()=>{
-          window.open(src)
-        }}
-        data-tooltip-id="vwt"
-        data-tooltip-content="View"
-        className="flex items-center justify-center  ml-2 ">
+        <button
+          onClick={() => {
+            window.open(src);
+          }}
+          data-tooltip-id="vwt"
+          data-tooltip-content="View"
+          className="flex items-center justify-center  ml-2 "
+        >
           <Tooltip id="vwt" />
           <svg
-          height={16}
+            height={16}
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

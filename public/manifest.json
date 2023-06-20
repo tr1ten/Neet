@@ -10,6 +10,9 @@
       "32": "favicon32.png"
     }
   },
+  "background": {
+    "service_worker": "background.js"
+  },
   "icons": {
     "16": "favicon16.png",
     "32": "favicon32.png",
@@ -20,6 +23,9 @@
       "gecko": {
         "id": "addon@neet-templates.com"
       }
-    }
+    },
+    "permissions": [
+      "storage"
+    ]
 
 }

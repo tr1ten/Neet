@@ -25,7 +25,6 @@ function Options({ language, localOnly, onLanguageChange, onLocalChange }) {
           type="checkbox"
           checked={localOnly}
           onChange={(e) => onLocalChange(e.target.checked)}
-          disabled
         />
       </div>
     </div>

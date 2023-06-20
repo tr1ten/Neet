@@ -62,6 +62,20 @@ export const templates = [
     published: "2021-01-01",
     src: "./templates/segment_tree.py",
   },
+  {
+    name:"Rabin Karp",
+    author: "tr1ten",
+    language: "Python",
+    published: "2021-01-01",
+    src: "./templates/rabin_karp.py",
+  },
+  {
+    name:"Binary Exponentiation",
+    author: "tr1ten",
+    language: "Python",
+    published: "2021-01-01",
+    src: "./templates/fast_pow.py",
+  }
   
 ].sort((a, b) => {
     if (a.name < b.name) return -1;

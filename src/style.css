@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    width: 400px; /* max: 1000px */
+    height: 600px; /* max: 750px */
+    overflow: hidden;
+}
 main
 {
     width: 400px; /* max: 1000px */
