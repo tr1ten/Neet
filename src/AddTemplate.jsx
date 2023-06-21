@@ -20,8 +20,13 @@ function AddTemplate() {
     });
     const navigate = useNavigate();
     const onAddTemplate = async () => {
+        console.log("saving template ",template);
         const localTemplates = (await browser.storage.local.get(["localTemplates"])).localTemplates || [];
-        browser.storage.local.set({ localTemplates: [...localTemplates, template] });
+        // convert src code to blob url
+        const blob = new Blob([template.src], { type: "text/plain" });
+        const src = URL.createObjectURL(blob);
+        const temp = { ...template, src };
+        browser.storage.local.set({ localTemplates: [...localTemplates, temp] });
         navigate("/");
     }
 
@@ -37,7 +42,7 @@ function AddTemplate() {
         className='flex flex-col items-center justify-center w-full px-4 py-2'
         onSubmit={(e) => {
             e.preventDefault();
-            onAddTemplate(template);
+            onAddTemplate();
         }}
         >
             <input
@@ -79,7 +84,8 @@ function AddTemplate() {
             onChange={(e) => setTemplate({ ...template, src: e.target.value })}
             />
             <button
-            className='px-4 py-2 mb-2 text-white bg-blue-500 rounded-md'
+            disabled={!template.src || !template.language || !template.name || !template.author}
+            className='px-4 py-2 mb-2 text-white bg-blue-500 rounded-md disabled:bg-gray-400'
             type="submit"
             >
                 Add Template

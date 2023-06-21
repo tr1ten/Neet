@@ -10,21 +10,33 @@ import Options from "./Options.jsx";
 
 export default function Root() {
     const browser = window.browser || window.chrome;
-  const [searchResults, setSearchResults] = React.useState(Data);
-  const [searchQuery, setSearchQuery] = React.useState("");
-  const [language, setLanguage] = React.useState("All");
-  const [localOnly, setLocalOnly] = React.useState(false);
+    const [searchQuery, setSearchQuery] = React.useState("");
+    const [language, setLanguage] = React.useState("All");
+    const [localOnly, setLocalOnly] = React.useState(false);
+    const [searchResults, setSearchResults] = React.useState(Data);
   const [templates, setTemplates] = React.useState(Data);
+  // todo fix filtering logic, so many bugs there :(
   React.useEffect(() => {
         const getLocalTemplates = async () => {
             const localTemplates = (await browser.storage.local.get(["localTemplates"])).localTemplates || [];
-            console.log("localTemplates", localTemplates);
             setTemplates([...Data, ...localTemplates]);
             setSearchResults([...Data, ...localTemplates]);
           }
-        getLocalTemplates();
-    },[]);
+        const getUserPreference = async ()=>{
+          browser.storage.sync.get('language',(data)=>{
+            setLanguage(data.language);
+            if(data.language) onLanguageChange(data.language);
 
+          })
+          browser.storage.sync.get('localOnly',(data)=>{
+            setLocalOnly(data.localOnly);
+            if(data.localOnly) onLocalChange(true);
+          })
+          
+        }
+        getLocalTemplates();
+        getUserPreference();
+    },[]);
   const filter = (q) => {
     const results = templates.filter((template) => {
       const { name, author, language,local } = template;
@@ -36,8 +48,12 @@ export default function Root() {
     });
     setSearchResults(results);
   };
+  const setKey = (key,val)=>{
+    return browser.storage.sync.set({[key]:val});
+  }
   const onLanguageChange = (value) => {
     setLanguage(value);
+    setKey('language',value);
     if (value === "All") setSearchResults(templates);
     else {
       const results = templates.filter((template) => {
@@ -50,6 +66,7 @@ export default function Root() {
   const onLocalChange = (value) => {
       // local template hash local = true
     setLocalOnly(value);
+    setKey('localOnly',value);
     if (value) {
       const results = templates.filter((template) => {
         const { local } = template;
@@ -70,7 +87,10 @@ export default function Root() {
       const localTemplates = templates.filter((t) => t.local && t.name !== name);
       browser.storage.local.set({ localTemplates });
       setTemplates([...Data, ...localTemplates]);
-      if(!localOnly) filter(searchQuery);
+      if(!localOnly) {
+        if (searchQuery) filter(searchQuery);
+        else setSearchResults([...Data, ...localTemplates]);
+      }
       else setSearchResults(localTemplates);
   }
   return (
