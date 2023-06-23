@@ -2,16 +2,13 @@
   "manifest_version": 3,
   "name": "Neet",
   "description": "Provide Code templates for various algorithms",
-  "version": "1.0",
+  "version": "1.1",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "favicon16.png",
       "32": "favicon32.png"
     }
-  },
-  "background": {
-    "service_worker": "background.js"
   },
   "icons": {
     "16": "favicon16.png",
