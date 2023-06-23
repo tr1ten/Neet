@@ -20,13 +20,17 @@ function AddTemplate() {
     });
     const navigate = useNavigate();
     const onAddTemplate = async () => {
-        console.log("saving template ",template);
         const localTemplates = (await browser.storage.local.get(["localTemplates"])).localTemplates || [];
-        // convert src code to blob url
-        const blob = new Blob([template.src], { type: "text/plain" });
-        const src = URL.createObjectURL(blob);
-        const temp = { ...template, src };
-        browser.storage.local.set({ localTemplates: [...localTemplates, temp] });
+        // check if template already exists
+        const exists = localTemplates.find((t) => t.name == template.name && t.language == template.language && t.author == template.author);
+        if (!exists) {
+            // convert src code to blob url
+            const blob = new Blob([template.src], { type: "text/plain" });
+            const src = URL.createObjectURL(blob);
+            const temp = { ...template, src };
+            browser.storage.local.set({ localTemplates: [...localTemplates, temp] });
+
+        }
         navigate("/");
     }
 

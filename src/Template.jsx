@@ -43,7 +43,7 @@ function Template({ author, language, name, published, src,local, onDelete }) {
        {
           local && (
             <button
-          onClick={()=> onDelete(name)}
+          onClick={()=> onDelete(name,language,author)}
           data-tooltip-id="del"
           data-tooltip-content="Delete"
           className="flex items-center justify-center  ml-2 text-gray-500 "
