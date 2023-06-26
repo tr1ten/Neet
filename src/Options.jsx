@@ -1,5 +1,5 @@
 import React from "react";
-import { Lanugeages } from "../public/templates/index";
+import { Lanugeages } from "../helper/index";
 // lanuguage prefernce
 // local ony or not
 function Options({ language, localOnly, onLanguageChange, onLocalChange }) {

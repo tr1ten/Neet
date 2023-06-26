@@ -4,23 +4,29 @@ import NHeader from "./NHeader.jsx";
 import SearchBar from "./SearchBar.jsx";
 import ShowResults from "./ShowResults.jsx";
 import Footer from "./Footer.jsx";
-import { templates as Data } from "../public/templates/index.js";
 import Options from "./Options.jsx";
+import { loadTemplates } from "../helper/index.js";
 // available code templates
+const browser = window.browser || window.chrome;
 export default function Root() {
-  const browser = window.browser || window.chrome;
   const [searchQuery, setSearchQuery] = React.useState("");
   const [language, setLanguage] = React.useState("All");
   const [localOnly, setLocalOnly] = React.useState(false);
-  const [searchResults, setSearchResults] = React.useState(Data);
-  const [templates, setTemplates] = React.useState(Data);
-  // todo fix filtering logic, so many bugs there :(
+  const [searchResults, setSearchResults] = React.useState([]);
+  const [templates, setTemplates] = React.useState([]);
   React.useEffect(() => {
-    const getLocalTemplates = async () => {
-      const localTemplates =
-        (await browser.storage.local.get(["localTemplates"])).localTemplates ||
-        [];
-      setTemplates([...Data, ...localTemplates]);
+    const getTemplates = async () => {
+      loadTemplates().then(async (data) => {
+        const officialTemplates = data.sort((a, b) => {
+          if (a.name < b.name) return -1;
+          return 1;
+        });
+        const localTemplates =
+          (await browser.storage.local.get(["localTemplates"]))
+            .localTemplates || [];
+        console.log("lolcal", localTemplates,officialTemplates);
+        setTemplates([...officialTemplates, ...localTemplates]);
+      });
     };
     const getUserPreference = async () => {
       browser.storage.sync.get("language", (data) => {
@@ -30,13 +36,13 @@ export default function Root() {
         setLocalOnly(data.localOnly);
       });
     };
-    getLocalTemplates();
+    getTemplates();
     getUserPreference();
   }, []);
 
   React.useEffect(() => {
     filter(searchQuery, language, localOnly); // take care of syncing search results with state
-  }, [templates,searchQuery, language, localOnly]);
+  }, [templates, searchQuery, language, localOnly]);
 
   const filter = (q, preferred_lang, isLocalOnly) => {
     const results = templates.filter((template) => {
@@ -69,10 +75,12 @@ export default function Root() {
   const onQueryChange = (value) => {
     setSearchQuery(value);
   };
-  const onDeleteTemplate = (name,lang,authr) => {
-    const localTemplates = templates.filter((t) => t.local && (t.name !== name  || t.language !== lang || t.author !== authr));
-    browser.storage.local.set({ localTemplates });
-    setTemplates([...Data, ...localTemplates]);
+  const onDeleteTemplate = (name, lang, authr) => {
+    const modified = templates.filter(
+      (t) => t.name !== name || t.language !== lang || t.author !== authr
+    );
+    browser.storage.local.set({ localTemplates: modified.filter((t) => t.local) });
+    setTemplates([...modified]);
   };
   return (
     <main>

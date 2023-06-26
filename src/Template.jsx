@@ -1,13 +1,14 @@
 import React from "react";
 import { Tooltip } from "react-tooltip";
-import { BadgeColors } from "../public/templates/index.js";
+import { BadgeColors } from "../helper/index.js";
 // Card
 // Name, Author, Language, Published
 
 function Template({ author, language, name, published, src,local, onDelete }) {
   const [copyStatus, setCopyStatus] = React.useState(false);
+  const url = local ? src : BASE_URL + src;
   const onCopy = () => {
-    fetch(src)
+    fetch(url)
       .then((res) => res.text())
       .then((text) => {
         navigator.clipboard.writeText(text);
@@ -91,7 +92,7 @@ function Template({ author, language, name, published, src,local, onDelete }) {
         {/* view icon */}
         <button
           onClick={() => {
-            window.open(src);
+            window.open(url);
           }}
           data-tooltip-id="vwt"
           data-tooltip-content="View"

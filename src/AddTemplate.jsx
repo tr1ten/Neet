@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Lanugeages, templates } from '../public/templates';
+import { Lanugeages, templates } from '../helper';
 import NHeader from './NHeader.jsx';
 
 // this allows user to add custom templates which is stored in browser storage

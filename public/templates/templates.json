@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Binary Search",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src":  "binary_search.py"
+    },
+    {
+      "name": "DSU",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src":  "dsu.py"
+    },
+    {
+      "name": "Fenwick Tree",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src":  "fenwick_tree.py"
+    },
+    {
+      "name": "Lowest Common Ancestor (Binary Lifting)",
+      "author": "tr1ten",
+      "language": "Cpp",
+      "published": "2021-01-01",
+      "src":  "lca.cpp"
+    },
+    {
+      "name": "DSU",
+      "author": "tr1ten",
+      "language": "Cpp",
+      "published": "2021-01-01",
+      "src":  "dsu.cpp"
+    },
+    {
+      "name": "Fenwick Tree",
+      "author": "tr1ten",
+      "language": "Cpp",
+      "published": "2021-01-01",
+      "src":  "fenwick_tree.cpp"
+    },
+    {
+      "name": "Sieves Factorization",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src":  "sieves_factorization.py"
+    },
+    {
+      "name":"Union Find",
+      "author": "tr1ten",
+      "language": "Java",
+      "published": "2021-01-01",
+      "src":  "Union_Find.java"
+    },
+    {
+      "name":"Segment Tree (Generic)",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src":  "segment_tree.py"
+    },
+    {
+      "name":"Rabin Karp",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src":  "rabin_karp.py"
+    },
+    {
+      "name":"Binary Exponentiation",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src":  "fast_pow.py"
+    }
+    
+  ]
