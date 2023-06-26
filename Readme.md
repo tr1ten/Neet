@@ -1,31 +1,33 @@
-# Neet
 
-Neet is a project that provides high-quality algorithm and data structure templates in various programming languages. It aims to assist developers by offering ready-to-use code snippets for common algorithms and data structures.
+<p align="center"><a href="#" target="_blank" rel="noreferrer noopener"><img width="250" alt="Logo" src="https://raw.githubusercontent.com/tr1ten/Neet/master/public/logo.png"></a></p>
+<p align="center">Neet provides ready to use templates for <strong>Data Structures</strong> and <strong>Algorithms.</strong></p>
+<br/>
+<p align="center">
+ <a rel="noreferrer noopener" href="https://addons.mozilla.org/en-US/firefox/addon/neet/">
+<img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a> 
+</p>
+<h2 align="center">Neet</h2>
+<br/>
 
-## Installation
+Neet is an open-source MIT-licensed browser extension that aims provide high-quality coding templates in various programming languages. 
+
+## Features
+1. Quick Search & Copy Template
+2. Customize Templates
+3. Persistent storage
+4. Automatically updates the template defination (online)
+## Manual Installation
 
 To install Neet as a browser extension by loading it manually, please follow the steps below:
 
-1. Download the Neet extension files from the official repository or another trusted source.
+1. Download the Neet extension files from the releases page.
 2. Unzip the downloaded file to a convenient location on your computer.
 
-### Google Chrome
+3. Open Browser and go to the extensions management page by navigating to `chrome://extensions` or `edge://extensions` or `opera://extensions` or `brave://extensions` or `vivaldi://extensions` in the address bar according to your browser.
+4. Enable the "Developer mode" by toggling the switch in the top-right corner of the page.
+5. Click on the "Load unpacked" button & Select the unzip file.
 
-1. Open Google Chrome and go to the extensions management page by typing `chrome://extensions` in the address bar.
-2. Enable the "Developer mode" by toggling the switch in the top-right corner of the page.
-3. Click on the "Load unpacked" button.
-4. Browse to the directory where you unzipped the Neet extension files and select the folder.
-5. Click "Select" or "Open" to load the extension.
-6. Neet will be added to your extensions list, and its icon will appear in the browser toolbar.
-
-### Mozilla Firefox
-
-1. Open Mozilla Firefox and type `about:debugging` in the address bar.
-2. Click on the "This Firefox" tab, then click on the "Load Temporary Add-on" button.
-3. Browse to the directory where you unzipped the Neet extension files and select any file within the folder.
-4. Neet will be loaded as a temporary extension, and its icon will appear in the browser toolbar.
-
-
+Done
 ## Build
 
 To build the Neet project, please follow these steps:
@@ -38,13 +40,13 @@ To build the Neet project, please follow these steps:
 ## To-Dos
 <!-- list of todos -->
 - [ ] Add common algorithms and data structures along with tests
-- [ ] Support user customization of templates
+- [x] Support user customization of templates
 - [ ] Inject templates into web pages
 
 ## Contributing
-
-If you would like to contribute to Neet, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
+You can contribute to Neet by creating a pull request on GitHub. Please make sure that your pull request adheres to the following guidelines:
+1. New Template should be added in the `src/templates` folder with proper test cases.
+2. Code should be properly formatted using [Prettier](https://prettier.io/).
 ## License
 
 Neet is licensed under the [MIT License](LICENSE).
