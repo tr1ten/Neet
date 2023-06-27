@@ -50,6 +50,6 @@ void preprocess(int root) {
 int main(int argc, char const *argv[])
 {
     // assign adj list
-    // preprocess(9);
+    // call preprocess with root
     return 0;
 }
