@@ -55,7 +55,7 @@ export default function Root() {
         (!q ||
           name.toLowerCase().includes(q.toLowerCase()) ||
           author.toLowerCase().includes(q.toLowerCase()) ||
-          language.toLowerCase().includes(q.toLowerCase()))
+          lang.toLowerCase().includes(q.toLowerCase()))
       );
     });
     setSearchResults(results);

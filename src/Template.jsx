@@ -12,11 +12,12 @@ function Template({ author, language, name, published, src,local, onDelete }) {
       .then((res) => res.text())
       .then((text) => {
         navigator.clipboard.writeText(text);
-      });
-    setCopyStatus(true);
+        setCopyStatus(true);
     setTimeout(() => {
       setCopyStatus(false);
     }, 1000);
+      });
+    
   };
   return (
     <div
