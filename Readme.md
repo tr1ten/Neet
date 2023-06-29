@@ -16,18 +16,21 @@ Neet is an open-source MIT-licensed browser extension that aims provide high-qua
 2. Customize Templates
 3. Persistent storage
 4. Automatically updates the template defination (online)
+
+## Screenshots
+![Screenshot](./screenshots/screenshot_1.png)
 ## Manual Installation
 
 To install Neet as a browser extension by loading it manually, please follow the steps below:
 
-1. Download the Neet extension files from the releases page.
+1. Download the Neet extension zip from the releases page.
 2. Unzip the downloaded file to a convenient location on your computer.
 
 3. Open Browser and go to the extensions management page by navigating to `chrome://extensions` or `edge://extensions` or `opera://extensions` or `brave://extensions` or `vivaldi://extensions` in the address bar according to your browser.
 4. Enable the "Developer mode" by toggling the switch in the top-right corner of the page.
 5. Click on the "Load unpacked" button & Select the unzip file.
 
-Done
+Enjoy!
 ## Build
 
 To build the Neet project, please follow these steps:
