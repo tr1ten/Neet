@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Lanugeages, templates } from '../helper';
+import { Languages, templates } from '../helper';
 import NHeader from './NHeader.jsx';
 
 // this allows user to add custom templates which is stored in browser storage
@@ -71,7 +71,7 @@ function AddTemplate() {
                 <option value="" disabled> 
                     Select Language
                 </option>
-                {Lanugeages.map((language) => (
+                {Languages.map((language) => (
                     <option key={language} value={language}>
                         {language}
                     </option>
