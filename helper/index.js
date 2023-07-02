@@ -21,7 +21,7 @@ export const BadgeColors = {
   C: "bg-blue-500",
 };
 
-export const Lanugeages = [
+export const Languages = [
     "C",
     "Cpp",
     "Python",
