@@ -215,4 +215,46 @@
       "published": "2021-01-01",
       "src": "sieves_factorisation.cpp"
   }
+  {
+    "id": 28,
+    "name": "Dijkstra",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "dijkstra.java"
+}
+{
+    "id": 29,
+    "name": "Fenwick Tree",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "fenwick_tree.java"
+}
+
+{
+    "id": 30,
+    "name": "Dutch national flag",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "dnf.java"
+}
+
+{
+    "id": 31,
+    "name": "Moore's Voting algorithm",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "Mva.java"
+}
+{
+    "id": 32,
+    "name": "Modified Moore's Voting algorithm",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "Modified_Mva.java"
+}
 ]
