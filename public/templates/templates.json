@@ -37,7 +37,7 @@
       "author": "tr1ten",
       "language": "Java",
       "published": "2021-01-01",
-      "src": "java/RMQ.java"
+      "src": "java/rmq.java"
   },
   {
       "id": 6,
@@ -53,7 +53,7 @@
       "author": "tr1ten",
       "language": "Java",
       "published": "2021-01-01",
-      "src": "java/Union_Find.java"
+      "src": "java/union_find.java"
   },
   {
       "id": 8,
@@ -109,7 +109,7 @@
       "author": "tr1ten",
       "language": "Python",
       "published": "2021-01-01",
-      "src": "py/ZAlgorithm.py"
+      "src": "py/z_algorithm.py"
   },
   {
       "id": 15,
@@ -149,7 +149,7 @@
       "author": "tr1ten",
       "language": "Cpp",
       "published": "2021-01-01",
-      "src": "cpp/Moo.cpp"
+      "src": "cpp/moo.cpp"
   },
   {
       "id": 20,
@@ -189,7 +189,7 @@
       "author": "tr1ten",
       "language": "Java",
       "published": "2021-01-01",
-      "src": "java/IndexPriorityQueue.java"
+      "src": "java/index_priority_queue.java"
   },
   {
       "id": 25,
@@ -197,7 +197,7 @@
       "author": "tr1ten",
       "language": "Java",
       "published": "2021-01-01",
-      "src": "java/Manchestors.java"
+      "src": "java/manchestors.java"
   },
   {
       "id": 26,
