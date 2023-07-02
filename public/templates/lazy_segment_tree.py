@@ -47,7 +47,7 @@ class RangeQuery :
         self._range_update(mid+1,high,l,r,diff,rc);
         self.tree[node] = self.tree[lc]+self.tree[rc]
     
-    def range_update(self,left:int,right:int,diff:int):
+    def range_update(self,left:int,right:int,diff:int): # update range [left,right] by diff
         self._range_update(0,self.n-1,left,right,diff,1)
     
     def _query_sum(self,ns:int,ne:int,start:int,end:int,node:int) -> int:
@@ -58,7 +58,7 @@ class RangeQuery :
         mid = (ns+ne)//2;
         left,right = self._childs(node)
         return self._query_sum(ns,mid,start,end,left) + self._query_sum(mid+1,ne,start,end,right)
-    def query_sum(self,left:int,right:int):
+    def query_sum(self,left:int,right:int): # query sum of range [left,right]
         return self._query_sum(0,self.n-1,left,right,1);
 
 def main():

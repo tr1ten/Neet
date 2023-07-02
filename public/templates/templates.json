@@ -214,5 +214,30 @@
       "language": "Cpp",
       "published": "2021-01-01",
       "src": "sieves_factorisation.cpp"
+  },
+    {
+      "id": 28,
+      "name": "Fenwick Tree",
+      "author": "tr1ten",
+      "language": "Cpp",
+      "published": "2021-01-01",
+      "src": "fast_pow.cpp"
+  },
+    {
+      "id": 29,
+      "name": "Boyer Moore",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src": "boyer_moore.py"
+  },
+      {
+      "id": 30,
+      "name": "DNF",
+      "author": "tr1ten",
+      "language": "Python",
+      "published": "2021-01-01",
+      "src": "dnf.py"
   }
+  
 ]

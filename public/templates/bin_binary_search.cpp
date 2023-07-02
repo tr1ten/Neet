@@ -2,9 +2,6 @@
 
 using namespace std;
 typedef long long LL;
-string add(string s1,string s2){
-    
-}
 int main(int argc, char const *argv[])
 {
     auto ok = [&](LL k)

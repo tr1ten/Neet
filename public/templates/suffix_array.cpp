@@ -11,7 +11,6 @@ namespace SuffixArray
 	int N, gap;
 	int sa[MAXN], pos[MAXN], tmp[MAXN], lcp[MAXN]; // pos: store the rank of elements at prev step
     // sa stores sorted indices of suffixes 
-    
 	bool sufCmp(int i, int j)
 	{
 		if (pos[i] != pos[j])
@@ -45,7 +44,6 @@ namespace SuffixArray
 		}
 	}
 }
-
 // Example usage
 int main()
 {
