@@ -1,243 +1,290 @@
 [
   {
-      "id": 1,
-      "name": "Dijkstra",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "dijsktra.cpp"
+    "id": 1,
+    "name": "Dijkstra",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "dijsktra.cpp"
   },
   {
-      "id": 2,
-      "name": "Binary Exponentiation",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "fast_pow.py"
+    "id": 2,
+    "name": "Binary Exponentiation",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "fast_pow.py"
   },
   {
-      "id": 3,
-      "name": "KMP",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "kmp.py"
+    "id": 3,
+    "name": "KMP",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "kmp.py"
   },
   {
-      "id": 4,
-      "name": "Mask Combination",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "mask_comb.py"
+    "id": 4,
+    "name": "Mask Combination",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "mask_comb.py"
   },
   {
-      "id": 5,
-      "name": "Range Minimum Query",
-      "author": "tr1ten",
-      "language": "Java",
-      "published": "2021-01-01",
-      "src": "RMQ.java"
+    "id": 5,
+    "name": "Range Minimum Query",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "RMQ.java"
   },
   {
-      "id": 6,
-      "name": "Sieves Factorization",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "sieves_factorization.py"
+    "id": 6,
+    "name": "Sieves Factorization",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "sieves_factorization.py"
   },
   {
-      "id": 7,
-      "name": "Union Find",
-      "author": "tr1ten",
-      "language": "Java",
-      "published": "2021-01-01",
-      "src": "Union_Find.java"
+    "id": 7,
+    "name": "Union Find",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "Union_Find.java"
   },
   {
-      "id": 8,
-      "name": "Dijkstra (K-Shortest Path)",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "dijsktra.py"
+    "id": 8,
+    "name": "Dijkstra (K-Shortest Path)",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "dijsktra.py"
   },
   {
-      "id": 9,
-      "name": "Fenwick Tree",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "fenwick_tree.cpp"
+    "id": 9,
+    "name": "Fenwick Tree",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "fenwick_tree.cpp"
   },
   {
-      "id": 10,
-      "name": "Lazy Segment Tree",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "lazy_segment_tree.py"
+    "id": 10,
+    "name": "Lazy Segment Tree",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "lazy_segment_tree.py"
   },
   {
-      "id": 11,
-      "name": "Matrix Exponentiation",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "matrix_exp.cpp"
+    "id": 11,
+    "name": "Matrix Exponentiation",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "matrix_exp.cpp"
   },
   {
-      "id": 12,
-      "name": "Rolling Hash",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "rolling_hash.py"
+    "id": 12,
+    "name": "Rolling Hash",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "rolling_hash.py"
   },
   {
-      "id": 13,
-      "name": "Sum over Subsets DP",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "sos_dp.cpp"
+    "id": 13,
+    "name": "Sum over Subsets DP",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "sos_dp.cpp"
   },
   {
-      "id": 14,
-      "name": "ZAlgorithm",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "ZAlgorithm.py"
+    "id": 14,
+    "name": "ZAlgorithm",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "ZAlgorithm.py"
   },
   {
-      "id": 15,
-      "name": "Binary Search",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "binary_search.py"
+    "id": 15,
+    "name": "Binary Search",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "binary_search.py"
   },
   {
-      "id": 16,
-      "name": "Union Find",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "dsu.cpp"
+    "id": 16,
+    "name": "Union Find",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "dsu.cpp"
   },
   {
-      "id": 17,
-      "name": "Fenwick Tree",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "fenwick_tree.py"
+    "id": 17,
+    "name": "Fenwick Tree",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "fenwick_tree.py"
   },
   {
-      "id": 18,
-      "name": "Lowest Common Ancestor",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "lca.cpp"
+    "id": 18,
+    "name": "Lowest Common Ancestor",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "lca.cpp"
   },
   {
-      "id": 19,
-      "name": "Moo - Range Queries",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "Moo.cpp"
+    "id": 19,
+    "name": "Moo - Range Queries",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "Moo.cpp"
   },
   {
-      "id": 20,
-      "name": "Segment Tree",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "segment_tree.py"
+    "id": 20,
+    "name": "Segment Tree",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "segment_tree.py"
   },
   {
-      "id": 21,
-      "name": "Suffix Array",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "suffix_array.cpp"
+    "id": 21,
+    "name": "Suffix Array",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "suffix_array.cpp"
   },
   {
-      "id": 22,
-      "name": "Binary Search (Bits)",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "bin_binary_search.cpp"
+    "id": 22,
+    "name": "Binary Search (Bits)",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "bin_binary_search.cpp"
   },
   {
-      "id": 23,
-      "name": "DSU",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "dsu.py"
+    "id": 23,
+    "name": "DSU",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "dsu.py"
   },
   {
-      "id": 24,
-      "name": "Index Priority Queue",
-      "author": "tr1ten",
-      "language": "Java",
-      "published": "2021-01-01",
-      "src": "IndexPriorityQueue.java"
+    "id": 24,
+    "name": "Index Priority Queue",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "IndexPriorityQueue.java"
   },
   {
-      "id": 25,
-      "name": "Manchestors",
-      "author": "tr1ten",
-      "language": "Java",
-      "published": "2021-01-01",
-      "src": "Manchestors.java"
+    "id": 25,
+    "name": "Manchestors",
+    "author": "tr1ten",
+    "language": "Java",
+    "published": "2021-01-01",
+    "src": "Manchestors.java"
   },
   {
-      "id": 26,
-      "name": "Rabin Karp",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "rabin_karp.py"
+    "id": 26,
+    "name": "Rabin Karp",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "rabin_karp.py"
   },
   {
-      "id": 27,
-      "name": "Sieves Factorisation",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "sieves_factorisation.cpp"
+    "id": 27,
+    "name": "Sieves Factorisation",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "sieves_factorisation.cpp"
   },
-    {
-      "id": 28,
-      "name": "Fenwick Tree",
-      "author": "tr1ten",
-      "language": "Cpp",
-      "published": "2021-01-01",
-      "src": "fast_pow.cpp"
+  {
+    "id": 28,
+    "name": "Fenwick Tree",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "fast_pow.cpp"
   },
-    {
-      "id": 29,
-      "name": "Boyer Moore",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "boyer_moore.py"
+  {
+    "id": 29,
+    "name": "Boyer Moore",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "boyer_moore.py"
   },
-      {
-      "id": 30,
-      "name": "DNF",
-      "author": "tr1ten",
-      "language": "Python",
-      "published": "2021-01-01",
-      "src": "dnf.py"
+  {
+    "id": 30,
+    "name": "DNF",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "dnf.py"
+  },
+  {
+    "id": 31,
+    "name": "Ternary Search",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "ternary_search.cpp"
+  },
+  {
+    "id": 32,
+    "name": "Floyd Warshall",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "floyd_warshall.cpp"
+  },
+  {
+    "id": 33,
+    "name": "Flood Fill",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "flood_fill.cpp"
+  },
+  {
+    "id": 34,
+    "name": "Two Pointer",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "two_pointer.cpp"
+  },
+  {
+    "id": 35,
+    "name": "Quick Select",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "quick_sort.py"
+  },
+  {
+    "id": 36,
+    "name": "Tarjan",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "tarjan.cpp"
   }
-  
 ]
