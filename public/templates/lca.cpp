@@ -26,7 +26,7 @@ bool is_ancestor(int u, int v)
     return tin[u] <= tin[v] && tout[u] >= tout[v];
 }
 
-int lca(int u, int v)
+int lca(int u, int v) // find lowest common ancestor of u and v
 {
     if (is_ancestor(u, v))
         return u;
@@ -38,7 +38,7 @@ int lca(int u, int v)
     }
     return up[u][0];
 }
-
+// must call this function before using lca
 void preprocess(int root) {
     tin.resize(n);
     tout.resize(n);

@@ -1,5 +1,12 @@
 import java.util.Scanner;
-class RMQ {
+/**
+ * Range Minimum Query
+ * Find the minimum element in a range of an array
+ * Preprocessing: O(NlogN)
+ * Query: O(1)
+ * @param arr - input array
+ */
+class RMQ { 
     int[][] m;
     RMQ(int[] arr){
         // preprocessing
@@ -10,8 +17,8 @@ class RMQ {
         for (int j = 1; j <= LOG; j++) {
             for (int i = 0; i < N-(1<<j)+1; i++) m[i][j] = Math.min(m[i][j-1], m[i+(1<<(j-1))][j-1]);
         }
-
     }
+    // Find min in range [L,R]
     int query(int L,int R){
         int len = R-L+1;
         int j = (int)Math.floor((Math.log(len)/Math.log(2)));

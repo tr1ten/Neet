@@ -12,16 +12,18 @@ class QuickUnionWt {
             size[i] = 1;
         }
     }
-    public int count() {
+    // Return number of connected components
+    public int count() { 
         return count;
     }
-
+    // Return component identifier for component containing p
     public int find(int p) {
         validate(p);
         while (p != parent[p])
             p = parent[p];
         return p;
-    }
+    } 
+    // Return true if p and q are in the same component
     public boolean connected(int p, int q) {
         return find(p) == find(q);
     }
@@ -33,7 +35,7 @@ class QuickUnionWt {
             throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n-1));  
         }
     }
-
+    // Merge components containing p and q
     public void union(int p, int q) {
         int rootP = find(p);
         int rootQ = find(q);

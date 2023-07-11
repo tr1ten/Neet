@@ -1,4 +1,4 @@
-def lps(s):
+def lps(s): # longest prefix suffix array
         arr = [0]*len(s)
         i,j = 1,0
         while(i<len(s)):
@@ -12,7 +12,7 @@ def lps(s):
             else:
                 j = arr[j-1] # can't just use j-1 since we don't know if smaller <j-1 are equal 
         return arr
-def strStr(self, haystack, needle):
+def strStr(self, haystack, needle): # O(n+m) - find needle in haystack
     s  =  needle+"#"+haystack
     for i,x in enumerate(lps(s)):
         if(x==len(needle)): return i-2*len(needle)
