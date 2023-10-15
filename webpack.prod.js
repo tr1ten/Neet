@@ -7,7 +7,7 @@ module.exports = merge(config, {
   plugins: [
     new webpack.DefinePlugin({
       BASE_URL: JSON.stringify(
-        "https://raw.githubusercontent.com/tr1ten/Neet/master/public/templates/"
+        "https://gitlab.com/neet3/Neet/-/raw/master/public/templates/"
       ),
     }),
     new CopyPlugin({

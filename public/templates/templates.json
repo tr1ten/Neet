@@ -217,7 +217,7 @@
   },
   {
     "id": 28,
-    "name": "Fenwick Tree",
+    "name": "Fast Pow",
     "author": "tr1ten",
     "language": "Cpp",
     "published": "2021-01-01",
@@ -286,5 +286,37 @@
     "language": "Cpp",
     "published": "2021-01-01",
     "src": "tarjan.cpp"
+  },
+  {
+    "id":37,
+    "name":"2D Prefix",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2022-09-15",
+    "src":"2d_prefix.cpp"
+  },
+  {
+    "id":38,
+    "name":"Divisors",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2022-09-15",
+    "src":"divisors.cpp"
+  },
+  {
+    "id":39,
+    "name":"Combination nCr",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2022-09-15",
+    "src":"nCr.cpp"
+  },
+  {
+    "id":40,
+    "name":"Hashed String",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2022-09-15",
+    "src":"hashed_string.cpp"
   }
 ]
