@@ -1,3 +1,8 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
  class HashedString {
   private:
 	// change M and B if you want
