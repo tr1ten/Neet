@@ -1,6 +1,6 @@
 const browser = window.browser || window.chrome;
 export async function loadTemplates() {
-  return fetch(BASE_URL + "templates.json")
+  return fetch(BASE_URL + "templates.json" + "/raw?ref=master")
     .then((res) => res.json())
     .then((res) => {
       browser.storage.local.set({ templates: res });
