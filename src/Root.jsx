@@ -17,6 +17,7 @@ export default function Root() {
   React.useEffect(() => {
     const getTemplates = async () => {
       loadTemplates().then(async (data) => {
+        if(!data) return;
         const officialTemplates = data.sort((a, b) => {
           if (a.name < b.name) return -1;
           return 1;
