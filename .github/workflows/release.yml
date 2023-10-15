@@ -32,7 +32,7 @@ jobs:
       - name: "Test Artifact"
         run: "ls -R"
       - name: "Create Zip"
-        uses: thedoctor0/zip-release@v1
+        uses:  thedoctor0/zip-release@0.7.1
         with:
           filename: neet.zip
       - name: Create Release
