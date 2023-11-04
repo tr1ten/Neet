@@ -5,6 +5,9 @@
 <p align="center">
  <a rel="noreferrer noopener" href="https://addons.mozilla.org/en-US/firefox/addon/neet/">
 <img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a> 
+ <a rel="noreferrer noopener" href="https://chrome.google.com/webstore/detail/neet/fgaieoffhelmpcolhgpnckicinglgkff?hl=en"><img alt="Chrome Web Store" src="https://img.shields.io/badge/Chrome-141e24.svg?&style=for-the-badge&logo=google-chrome&logoColor=white"></a>  
+  <a rel="noreferrer noopener" href="https://microsoftedge.microsoft.com/addons/detail/neet/bbpmdikggjjjebpnpdkkcfgmglmphkip"><img alt="Edge Addons" src="https://img.shields.io/badge/Edge-141e24.svg?&style=for-the-badge&logo=microsoft-edge&logoColor=white"></a>
+
 </p>
 <h2 align="center">Neet</h2>
 <br/>
