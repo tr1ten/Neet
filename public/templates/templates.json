@@ -318,5 +318,29 @@
     "language":"Cpp",
     "published":"2022-09-15",
     "src":"hashed_string.cpp"
+  },
+  {
+      "id":41,
+      "name":"Bridges",
+      "author":"tr1ten",
+      "language":"Cpp",
+      "published":"2022-09-15",
+      "src":"bridges.cpp"
+  },
+  {
+    "id":42,
+    "name":"Topological Sort",
+    "author":"tr1ten",
+    "language":"Python",
+    "published":"2022-09-15",
+    "src":"topological_sort.py"
+  },
+  {
+    "id":43,
+    "name":"Manchestors",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2022-09-15",
+    "src":"manchestors.cpp"
   }
 ]
