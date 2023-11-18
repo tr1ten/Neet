@@ -342,5 +342,13 @@
     "language":"Cpp",
     "published":"2022-09-15",
     "src":"manchestors.cpp"
+  },
+  {
+    "id": 44,
+    "name": "Segment Tree",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "segment_tree.cpp"
   }
 ]
