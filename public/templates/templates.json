@@ -350,5 +350,21 @@
     "language": "Cpp",
     "published": "2021-01-01",
     "src": "segment_tree.cpp"
+  },
+  {
+    "id": 45,
+    "name": "Sparse Array",
+    "author": "tr1ten",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "sparse.cpp"
+  },
+  {
+    "id": 45,
+    "name": "Sparse Array",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "sparse.py"
   }
 ]
