@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Binary Exponentiation",
+    "name": "Fast Pow",
     "author": "tr1ten",
     "language": "Python",
     "published": "2021-01-01",
@@ -366,5 +366,13 @@
     "language": "Python",
     "published": "2021-01-01",
     "src": "sparse.py"
+  },
+  {
+    "id": 47,
+    "name": "Combination nCr",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "nCr.py"
   }
 ]
