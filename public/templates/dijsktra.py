@@ -16,6 +16,27 @@ def dijsktra(adj,S,K):
                 dist[v][k+1] = dist[u][k];
                 heapq.heappush(dq,(dist[v][k+1],v,k+1))
     return dist
+
+def dijkstra(S, adj):
+    n = len(adj)
+    dist = [float('inf')] * n
+    par = [-1] * n
+    dist[S] = 0
+    par[S] = S
+    pq = [(0, S)]
+
+    while pq:
+        du, u = heapq.heappop(pq)
+        if du > dist[u]:
+            continue
+
+        for v, w in adj[u]:
+            if dist[v] > dist[u] + w:
+                dist[v] = dist[u] + w
+                par[v] = u
+                heapq.heappush(pq, (dist[v], v))
+
+    return par  # or dist according to needs
 # General K smallest distance dijsktra
 def main():
     N,M,K = map(int,input().split())

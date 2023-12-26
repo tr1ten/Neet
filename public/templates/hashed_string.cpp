@@ -1,33 +1,30 @@
-#include <bits/stdc++.h>
+using ll = long long;
+class HashedString {
+public:
+	static const long long M = (1LL<<61) -1;
+	static const long long B;
+    static vector<long long> ppow;
+    vector<long long> hashes;
+    __int128 mul(ll a, ll b) { return (__int128)a * b; }
+	ll mod_mul(ll a, ll b) { return mul(a, b) % M; }
+    HashedString(string s) {
+        int n = s.length();
+        ppow = {1};
+        hashes = {0};
 
-using namespace std;
+        for (int i = 0; i < n; ++i) {
+            ppow.push_back(mod_mul(ppow.back(),B) );
+        }
 
+        for (int i = 0; i < n; ++i) {
+            hashes.push_back((mod_mul(hashes.back(), B) + (s[i] - 'a' + 1)) % M);
+        }
+    }
 
- class HashedString {
-  private:
-	// change M and B if you want
-	static const long long M = 1e9 + 7;
-	static const long long B = 9973;
-
-	// pow[i] contains B^i % M
-	static vector<long long> pow;
-
-	// p_hash[i] is the hash of the first i characters of the given string
-	vector<long long> p_hash;
-
-  public:
-	HashedString(const string &s) : p_hash(s.size() + 1) {
-		while (pow.size() < s.size()) { pow.push_back((pow.back() * B) % M); }
-
-		p_hash[0] = 0;
-		for (int i = 0; i < s.size(); i++) {
-			p_hash[i + 1] = ((p_hash[i] * B) % M + s[i]) % M;
-		}
-	}
-
-	long long getHash(int start, int end) {
-		long long raw_val =
-		    (p_hash[end + 1] - (p_hash[start] * pow[end - start + 1]));
-		return (raw_val % M + M) % M;
-	}
+    long long getHash(int i, int j) {
+        return (hashes[j + 1] - mod_mul(hashes[i], ppow[j - i + 1]) + M) % M;
+    }
 };
+mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count());
+const ll HashedString::B = uniform_int_distribution<ll>(0, M - 1)(rng);
+vector<long long> HashedString::ppow = {1};
