@@ -13,3 +13,18 @@ class BIT:
             r += self.nums[i]
             i -= (i&(-i))
         return r
+    
+
+# class MaxBIT:  # One-based indexing
+#     def __init__(self, size):
+#         self.bit = [0] * (size + 1)
+#     def get(self, idx):
+#         ans = 0
+#         while idx > 0:
+#             ans = max(ans, self.bit[idx])
+#             idx -= idx & (-idx)
+#         return ans
+#     def update(self, idx, val):
+#         while idx < len(self.bit):
+#             self.bit[idx] = max(self.bit[idx], val)
+#             idx += idx & (-idx)
