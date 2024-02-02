@@ -4,7 +4,7 @@ using namespace std;
 // https://judge.yosupo.jp/submission/170986
 typedef long long ll;
 const int N = 5*(1e5) + 5;
-int n;
+int n; // MAKE SURE TO INITIALIZE THIS TO SIZE OF ARRAY
 struct Segment{
     ll sum=0;
 } segm[4*N]; // 0 index
