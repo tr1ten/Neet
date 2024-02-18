@@ -374,5 +374,22 @@
     "language": "Python",
     "published": "2021-01-01",
     "src": "nCr.py"
+  },
+  {
+    "id": 48,
+    "name": "Is Prime",
+    "author": "tr1ten",
+    "language": "Python",
+    "published": "2021-01-01",
+    "src": "isPrime.py"
+  },
+  {
+    "id": 49,
+    "name": "Is Prime",
+    "author": "oversolver",
+    "language": "Cpp",
+    "published": "2021-01-01",
+    "src": "isPrime.cpp"
   }
+
 ]
