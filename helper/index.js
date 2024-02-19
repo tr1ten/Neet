@@ -1,4 +1,10 @@
 const browser = window.browser || window.chrome;
+// cache response in local storage
+export function loadTemplatesFromStorage() {
+  return browser.storage.local.get(["templates"])?.then((res) => {
+    return res.templates;
+  });
+}
 export async function loadTemplates() {
   return fetch(BASE_URL + "templates.json" + "/raw?ref=master")
     .then((res) => res.json())

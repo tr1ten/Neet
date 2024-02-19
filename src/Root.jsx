@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar.jsx";
 import ShowResults from "./ShowResults.jsx";
 import Footer from "./Footer.jsx";
 import Options from "./Options.jsx";
-import { loadTemplates } from "../helper/index.js";
+import { loadTemplates, loadTemplatesFromStorage } from "../helper/index.js";
 // available code templates
 const browser = window.browser || window.chrome;
 export default function Root() {
@@ -16,6 +16,7 @@ export default function Root() {
   const [templates, setTemplates] = React.useState([]);
   React.useEffect(() => {
     const getTemplates = async () => {
+      setTemplates(await loadTemplatesFromStorage());
       loadTemplates().then(async (data) => {
         if(!data) return;
         const officialTemplates = data.sort((a, b) => {
@@ -25,7 +26,6 @@ export default function Root() {
         const localTemplates =
           (await browser.storage.local.get(["localTemplates"]))
             .localTemplates || [];
-        console.log("lolcal", localTemplates,officialTemplates);
         setTemplates([...officialTemplates, ...localTemplates]);
       });
     };
