@@ -390,6 +390,14 @@
     "language": "Cpp",
     "published": "2021-01-01",
     "src": "isPrime.cpp"
+  },
+  {
+    "id":40,
+    "name":"Prime MOD nCr - lucas",
+    "author":"ShahjalalShohag",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"ModnCr.cpp"
   }
 
 ]
