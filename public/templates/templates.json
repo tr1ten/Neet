@@ -406,6 +406,14 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"lazy_segment_tree.cpp"
+  },{
+    "id":41,
+    "name":"Modulo Arthimatic",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"modulo_arithimatic.cpp"
+    
   }
 
 ]
