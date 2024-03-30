@@ -398,6 +398,14 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"ModnCr.cpp"
+  },
+  {
+    "id":41,
+    "name":"Lazy Segment Tree",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"lazy_segment_tree.cpp"
   }
 
 ]
