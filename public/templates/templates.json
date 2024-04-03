@@ -392,7 +392,7 @@
     "src": "isPrime.cpp"
   },
   {
-    "id":40,
+    "id":50,
     "name":"Prime MOD nCr - lucas",
     "author":"ShahjalalShohag",
     "language":"Cpp",
@@ -400,14 +400,14 @@
     "src":"ModnCr.cpp"
   },
   {
-    "id":41,
+    "id":51,
     "name":"Lazy Segment Tree",
     "author":"tr1ten",
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"lazy_segment_tree.cpp"
   },{
-    "id":41,
+    "id":52,
     "name":"Modulo Arthimatic",
     "author":"tr1ten",
     "language":"Cpp",
