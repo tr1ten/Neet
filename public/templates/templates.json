@@ -414,5 +414,13 @@
     "published":"2021-09-15",
     "src":"modulo_arithimatic.cpp"
     
+  },
+  {
+    "id":53,
+    "name":"Tree Diameter",
+    "author":"tr1ten",
+    "language":"Python",
+    "published":"2021-09-15",
+    "src":"tree_diamter.py"
   }
 ]
