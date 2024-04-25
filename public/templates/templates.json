@@ -422,5 +422,14 @@
     "language":"Python",
     "published":"2021-09-15",
     "src":"tree_diamter.py"
+  },
+  {
+    "id":54,
+    "name":"Max Subarray Sum Qeuries",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"max_subarray_sum_queries.cpp"
+    
   }
 ]
