@@ -430,6 +430,23 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"max_subarray_sum_queries.cpp"
-    
+  },
+  {
+    "id":55,
+    "name":"Extended GCD",
+    "author":"cpalgorithm",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"ext_gcd.cpp"
+  },
+  {
+    "id":56,
+    "name":"Chinesse Remainder Theorm",
+    "author":"valiors",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"crt.cpp"
   }
+  
+  
 ]
