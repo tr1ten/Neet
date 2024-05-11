@@ -446,7 +446,13 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"crt.cpp"
+  },
+  {
+    "id":57,
+    "name":"Linear Sieve",
+    "author":"Nisiyama_Suzune",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"linear_sieve.cpp"
   }
-  
-  
 ]
