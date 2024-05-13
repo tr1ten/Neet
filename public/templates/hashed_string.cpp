@@ -1,3 +1,4 @@
+// use c++20 compiler
 using ll = long long;
 class HashedString {
 public:

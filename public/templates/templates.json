@@ -454,5 +454,21 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"linear_sieve.cpp"
+  },
+  {
+    "id":58,
+    "name":"Mobius Function",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"mobius.cpp"
+  },
+  {
+    "id":59,
+    "name":"2Sat Solver",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"2_sat_solver.cpp"
   }
 ]
