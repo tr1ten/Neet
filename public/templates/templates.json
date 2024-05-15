@@ -470,5 +470,13 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"2_sat_solver.cpp"
+  },
+  {
+    "id":60,
+    "name":"Zig Zag Array",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"zigzag.cpp"
   }
 ]
