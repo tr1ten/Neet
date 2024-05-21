@@ -478,5 +478,14 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"zigzag.cpp"
+  },
+  {
+    "id":61,
+    "name":"Floor Sums",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"floor_sums.cpp"
   }
+  
 ]
