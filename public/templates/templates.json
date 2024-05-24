@@ -486,6 +486,13 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"floor_sums.cpp"
+  },
+  {
+    "id":62,
+    "name":"Devide & Conqour DP",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"dc_dp.cpp"
   }
-  
 ]
