@@ -494,5 +494,13 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"dc_dp.cpp"
+  },
+  {
+    "id":63,
+    "name":"Persistent Segment Tree",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"persistent_seg.cpp"
   }
 ]
