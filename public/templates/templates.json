@@ -502,5 +502,13 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"persistent_seg.cpp"
+  },
+  {
+    "id":64,
+    "name":"Binary Trie",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"binary_trie.cpp"
   }
 ]
