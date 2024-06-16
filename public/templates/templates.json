@@ -510,5 +510,13 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"binary_trie.cpp"
+  },
+  {
+    "id":65,
+    "name":"Rotate 90*",
+    "author":"tr1ten",
+    "language":"Cpp",
+    "published":"2021-09-15",
+    "src":"rotate_matrix.cpp"
   }
 ]
