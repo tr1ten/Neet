@@ -518,5 +518,13 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"rotate_matrix.cpp"
+  },
+  {
+    "id":66,
+    "name":"Bridges",
+    "author":"tr1ten",
+    "language":"py",
+    "published":"2021-09-15",
+    "src":"bridges.py"
   }
 ]
