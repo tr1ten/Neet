@@ -526,5 +526,13 @@
     "language":"py",
     "published":"2021-09-15",
     "src":"bridges.py"
+  },
+  {
+    "id":67,
+    "name":"Trie",
+    "author":"tr1ten",
+    "language":"py",
+    "published":"2021-09-15",
+    "src":"trie.cpp"
   }
 ]
