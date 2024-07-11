@@ -523,7 +523,7 @@
     "id":66,
     "name":"Bridges",
     "author":"tr1ten",
-    "language":"py",
+    "language":"Python",
     "published":"2021-09-15",
     "src":"bridges.py"
   },
@@ -531,7 +531,7 @@
     "id":67,
     "name":"Trie",
     "author":"tr1ten",
-    "language":"py",
+    "language":"Cpp",
     "published":"2021-09-15",
     "src":"trie.cpp"
   }
