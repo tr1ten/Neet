@@ -1,4 +1,4 @@
-const browser = window.browser || window.chrome;
+      const browser = window.browser || window.chrome;
 // cache response in local storage
 export function loadTemplatesFromStorage() {
   return browser.storage.local.get(["templates"])?.then((res) => {
