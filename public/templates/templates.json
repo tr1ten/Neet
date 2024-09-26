@@ -534,5 +534,13 @@
     "language":"Cpp",
     "published":"2021-09-15",
     "src":"trie.cpp"
+  },
+  {
+    "id":68,
+    "name":"Interval Trees",
+    "author":"tr1ten",
+    "language":"Java",
+    "published":"2021-09-15",
+    "src":"IntervalTrees.java"
   }
 ]
