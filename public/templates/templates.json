@@ -542,5 +542,14 @@
     "language":"Java",
     "published":"2021-09-15",
     "src":"IntervalTrees.java"
-  }
+  },
+  {
+    "id":69,
+    "name":"Xor Hashing",
+    "author":"tr1ten" ,
+    "language":"Cpp",
+    "published":"2024-10-02",
+    "src":"xorhash.cpp"
+  },
+  
 ]
