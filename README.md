@@ -51,7 +51,7 @@ To build the Neet project, please follow these steps:
 
 ## Contributing
 You can contribute to Neet by creating a pull request on GitHub. Please make sure that your pull request adheres to the following guidelines:
-1. New Template should be added in the `src/templates` folder with proper test cases.
+1. New Template should be added in the `public/templates` folder with proper test cases.
 2. Code should be properly formatted using [Prettier](https://prettier.io/).
 ## License
 
