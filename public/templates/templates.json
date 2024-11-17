@@ -550,6 +550,31 @@
     "language":"Cpp",
     "published":"2024-10-02",
     "src":"xorhash.cpp"
+  },
+  {
+    "id":70,
+    "name":"Debugging Print",
+    "author":"tr1ten" ,
+    "language":"Cpp",
+    "published":"2024-10-02",
+    "src":"debugging.cpp"
+  },
+  {
+    "id":71,
+    "name":"Custom Hash",
+    "author":"tr1ten" ,
+    "language":"Cpp",
+    "published":"2024-10-02",
+    "src":"custom_hash.cpp"
+  },
+  {
+    "id":72,
+    "name":"Policy Based DS",
+    "author":"tr1ten" ,
+    "language":"Cpp",
+    "published":"2024-10-02",
+    "src":"policy_based_ds.cpp"
   }
+  
   
 ]
