@@ -6,7 +6,7 @@ import { BadgeColors } from "../helper/index.js";
 
 function Template({ author, language, name, published, src,local, onDelete }) {
   const [copyStatus, setCopyStatus] = React.useState(false);
-  const url = local ? src : BASE_URL + src + "/raw?ref=master";
+  const url = src;
   const onCopy = () => {
     fetch(url)
       .then((res) => res.text())
