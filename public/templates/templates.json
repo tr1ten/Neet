@@ -574,6 +574,14 @@
     "language":"Cpp",
     "published":"2024-10-02",
     "src":"policy_based_ds.cpp"
+  },
+  {
+    "id":73,
+    "name":"Linear Diophantine",
+    "author":"cpalgorithm" ,
+    "language":"Cpp",
+    "published":"2024-12-13",
+    "src":"linear_diophantine.cpp"
   }
   
   
