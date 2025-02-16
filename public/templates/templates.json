@@ -582,7 +582,13 @@
     "language":"Cpp",
     "published":"2024-12-13",
     "src":"linear_diophantine.cpp"
+  },
+  {
+    "id": 74,
+    "name": "Interval Trees",
+    "author": "tr1ten",
+    "language": "Python", 
+    "published": "2024-12-13",
+    "src": "intervaltrees.py"
   }
-  
-  
 ]
